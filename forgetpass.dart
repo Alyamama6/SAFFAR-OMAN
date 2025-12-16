@@ -33,16 +33,16 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     });
 
     try {
-      // ✅ الريسيت الحقيقي من Firebase
+      //  Firebase
       await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
 
       if (!mounted) return;
 
-      // بعد إرسال الإيميل نروح لصفحة الـ verification code
+      //  verification code
       Navigator.pushNamed(
         context,
         '/verifyOtp',
-        arguments: email, // نمرر الإيميل لو حبيتي تستخدمينه في الشاشة الثانية
+        arguments: email, 
       );
     } on FirebaseAuthException catch (e) {
       setState(() {
@@ -189,4 +189,5 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     );
   }
 }
+
 
