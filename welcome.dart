@@ -8,7 +8,6 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // الخلفية
           Positioned.fill(
             child: Image.asset(
               'images/welcome.jpeg',
@@ -44,7 +43,6 @@ class WelcomeScreen extends StatelessWidget {
 
                   const Spacer(),
 
-                  // النص في المنتصف
                   const Text(
                     'Discover the soul of\nOman',
                     textAlign: TextAlign.center,
@@ -68,7 +66,7 @@ class WelcomeScreen extends StatelessWidget {
 
                   const Spacer(),
 
-                  // زر Create Account
+                   Create Account
                   SizedBox(
                     width: double.infinity,
                     height: 48,
@@ -93,7 +91,7 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 14),
 
-                  // زر Login
+                  Login
                   SizedBox(
                     width: double.infinity,
                     height: 48,
@@ -128,4 +126,5 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
+
 
