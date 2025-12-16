@@ -29,7 +29,6 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
       return;
     }
 
-    // هنا ما في تحقق فعلي — الفلو شكلي فقط
     Navigator.pushNamed(context, '/resetPassword');
   }
 
@@ -142,3 +141,4 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
     );
   }
 }
+
