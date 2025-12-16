@@ -74,7 +74,6 @@ class _TouristRegisterScreenState extends State<TouristRegisterScreen> {
 
       if (!mounted) return;
 
-      // تسجيل ناجح → يروح للاكسبلور
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Logged in successfully')),
       );
@@ -367,3 +366,4 @@ class _TouristRegisterScreenState extends State<TouristRegisterScreen> {
     );
   }
 }
+
